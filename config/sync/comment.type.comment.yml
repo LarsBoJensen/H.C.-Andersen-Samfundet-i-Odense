@@ -1,0 +1,10 @@
+uuid: 952a4572-35a2-47ff-8f09-cba8a90413bd
+langcode: da
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: bqZsN31T2n0UjcbyCpOPi9D2iO0sAOHR7FnEs9qMvaA
+id: comment
+label: Standardkommentarer
+target_entity_type_id: node
+description: 'Tillader kommentarer på indhold'
