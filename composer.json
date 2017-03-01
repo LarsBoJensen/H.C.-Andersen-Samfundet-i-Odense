@@ -1,0 +1,73 @@
+{
+    "name": "drupal-composer/drupal-project",
+    "description": "H.C. Andersen-Samfundet i Odense, a website built with Drupal 8",
+    "type": "project",
+    "license": "GPL-2.0+",
+    "authors": [
+        {
+            "name": "Lars Bo Jensen",
+            "role": "Developer"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        }
+    ],
+    "require": {
+        "composer/installers": "^1.0.20",
+        "cweagans/composer-patches": "~1.0",
+        "drupal/core": "~8.0",
+        "drush/drush": "~8.0",
+        "drupal/console": "~1.0",
+        "drupal/nimbus": "1.x-dev"
+    },
+    "require-dev": {
+        "behat/mink": "~1.7",
+        "phpunit/phpunit": "5.2.8",
+        "mikey179/vfsStream": "v1.6.2",
+        "symfony/css-selector": "~2.8"
+    },
+    "config": {
+        "preferred-install": "source",
+        "bin-dir": "bin/",
+        "secure-http": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "extra": {
+        "patches": {
+            "drupal/paragraphs": {
+                "https://www.drupal.org/node/2631590": "https://www.drupal.org/files/issues/paragraphs-EntityChangedConstraintValidator-FixAndTest-2631590-16.patch",
+                "https://www.drupal.org/node/2669732": "https://www.drupal.org/files/issues/buttons_to_remove_and-2669732-22.patch"
+            },
+            "drupal/core": {
+                "Fix bug in aggregator core module.": "https://bitbucket.org/comm-press/patches/raw/cc24422eb55b76fd2b20edc33ad5ceef9911c08e/drupal/core/core-aggregator.patch"
+            }
+        },
+        "installer-paths": {
+            "web/core": [
+                "type:drupal-core"
+            ],
+            "web/modules/contrib/{$name}": [
+                "type:drupal-module"
+            ],
+            "web/profiles/contrib/{$name}": [
+                "type:drupal-profile"
+            ],
+            "web/themes/contrib/{$name}": [
+                "type:drupal-theme"
+            ],
+            "web/drush/contrib/{$name}": [
+                "type:drupal-drush"
+            ],
+            "web/drush/custom/{$name}": [
+                "type:drupal-drush-custom"
+            ],
+            "web/modules/contrib/libraries/{$name}": [
+                "type:drupal-library"
+            ]
+        }
+    }
+}
