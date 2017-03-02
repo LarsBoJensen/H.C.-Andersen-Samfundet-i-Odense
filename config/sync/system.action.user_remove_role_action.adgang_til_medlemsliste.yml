@@ -1,0 +1,14 @@
+uuid: f57e80a6-75e9-4796-a714-f1514bac91d9
+langcode: da
+status: true
+dependencies:
+  config:
+    - user.role.adgang_til_medlemsliste
+  module:
+    - user
+id: user_remove_role_action.adgang_til_medlemsliste
+label: 'Remove the Adgang til medlemsliste role from the selected users'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: adgang_til_medlemsliste

@@ -1,0 +1,14 @@
+uuid: bfeec01e-52b2-409e-a6f5-a277e7419753
+langcode: da
+status: true
+dependencies:
+  config:
+    - user.role.medlem
+  module:
+    - user
+id: user_add_role_action.medlem
+label: 'Add the Medlem role to the selected users'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: medlem

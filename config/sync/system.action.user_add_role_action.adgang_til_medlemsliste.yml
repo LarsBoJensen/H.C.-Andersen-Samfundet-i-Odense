@@ -1,0 +1,14 @@
+uuid: e8ef0138-5acc-4d88-8de5-5d40b8f8d5bb
+langcode: da
+status: true
+dependencies:
+  config:
+    - user.role.adgang_til_medlemsliste
+  module:
+    - user
+id: user_add_role_action.adgang_til_medlemsliste
+label: 'Add the Adgang til medlemsliste role to the selected users'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: adgang_til_medlemsliste

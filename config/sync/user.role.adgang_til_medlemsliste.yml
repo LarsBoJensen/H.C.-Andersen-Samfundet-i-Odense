@@ -1,0 +1,9 @@
+uuid: 0c3b46b5-0bfd-440b-8167-6ce40450b784
+langcode: da
+status: true
+dependencies: {  }
+id: adgang_til_medlemsliste
+label: 'Adgang til medlemsliste'
+weight: -7
+is_admin: null
+permissions: {  }

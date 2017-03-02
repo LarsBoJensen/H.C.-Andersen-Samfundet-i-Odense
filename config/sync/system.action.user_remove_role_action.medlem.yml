@@ -1,0 +1,14 @@
+uuid: ad95f0f6-3474-4d82-864c-f743b4773147
+langcode: da
+status: true
+dependencies:
+  config:
+    - user.role.medlem
+  module:
+    - user
+id: user_remove_role_action.medlem
+label: 'Remove the Medlem role from the selected users'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: medlem

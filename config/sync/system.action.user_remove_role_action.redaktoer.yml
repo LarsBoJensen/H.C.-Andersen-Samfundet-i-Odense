@@ -1,0 +1,14 @@
+uuid: 70b017a5-3822-4f80-818f-bb7550eaf231
+langcode: da
+status: true
+dependencies:
+  config:
+    - user.role.redaktoer
+  module:
+    - user
+id: user_remove_role_action.redaktoer
+label: 'Remove the Redaktør role from the selected users'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: redaktoer

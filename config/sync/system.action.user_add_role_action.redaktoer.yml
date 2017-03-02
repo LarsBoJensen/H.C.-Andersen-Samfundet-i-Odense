@@ -1,0 +1,14 @@
+uuid: b9e00555-5771-43d2-b91a-d8be1d08202c
+langcode: da
+status: true
+dependencies:
+  config:
+    - user.role.redaktoer
+  module:
+    - user
+id: user_add_role_action.redaktoer
+label: 'Add the Redaktør role to the selected users'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: redaktoer

@@ -1,0 +1,9 @@
+uuid: 3b2c149e-1665-4bd4-9b72-9b4295efc6d3
+langcode: da
+status: true
+dependencies: {  }
+id: medlem
+label: Medlem
+weight: -8
+is_admin: null
+permissions: {  }
