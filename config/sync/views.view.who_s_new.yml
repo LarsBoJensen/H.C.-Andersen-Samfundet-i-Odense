@@ -39,10 +39,10 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Udfør
+          submit_button: Apply
           reset_button: false
-          reset_button_label: Gendan
-          exposed_sorts_label: 'Sortér efter'
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
           expose_sort_order: true
           sort_asc_label: Asc
           sort_desc_label: Desc
@@ -182,7 +182,7 @@ display:
     display_options:
       display_description: 'A list of new users'
       block_description: 'Who''s new'
-      block_category: Bruger
+      block_category: User
       display_extenders: {  }
     cache_metadata:
       contexts:
