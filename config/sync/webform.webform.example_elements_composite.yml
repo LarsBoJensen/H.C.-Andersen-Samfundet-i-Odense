@@ -1,0 +1,105 @@
+uuid: 0031e86e-c746-42a0-bc66-9585a7a821b5
+langcode: da
+status: false
+dependencies:
+  enforced:
+    module:
+      - webform_examples
+_core:
+  default_config_hash: 3x4D73t7bnKiBHP9ShzOqlCYHO4eUa-D4smWcKzs1IQ
+uid: null
+template: false
+id: example_elements_composite
+title: 'Example: Elements: Composite'
+description: 'Examples of composite elements, includes address, contact, and credit card.'
+elements: "webform_address_example:\n  '#type': details\n  '#title': Address\n  '#open': true\n  webform_address:\n    '#type': webform_address\n    '#title': Address\n  webform_address_multiple:\n    '#type': webform_address\n    '#title': 'Address multiple'\n    '#multiple': true\n    '#multiple__header': true\nwebform_contact_example:\n  '#type': details\n  '#title': Contact\n  '#open': true\n  webform_contact:\n    '#type': webform_contact\n    '#title': Contact\n  webform_contact_multiple:\n    '#type': webform_contact\n    '#title': 'Contact multiple'\n    '#multiple': true\nwebform_creditcard_example:\n  '#type': details\n  '#title': 'Credit card'\n  '#open': true\n  webform_creditcard:\n    '#type': webform_creditcard\n    '#title': 'Credit card'\nwebform_link_example:\n  '#type': details\n  '#title': Link\n  '#open': true\n  webform_link:\n    '#type': webform_link\n    '#title': Link\n  webform_link_multiple:\n    '#type': webform_link\n    '#title': 'Link multiple'\n    '#multiple': true\n    '#multiple__header': true\nwebform_location_example:\n  '#type': details\n  '#title': Location\n  '#open': true\n  webform_location:\n    '#type': webform_location\n    '#title': Location\n  webform_location_multiple:\n    '#type': webform_location\n    '#title': 'Location multiple'\n    '#multiple': true\nwebform_name_example:\n  '#type': details\n  '#title': Name\n  '#open': true\n  webform_name:\n    '#type': webform_name\n    '#title': Name\n  webform_name_multiple:\n    '#type': webform_name\n    '#title': 'Name multiple'\n    '#multiple': true\n    '#multiple__header': true\n"
+css: ''
+javascript: ''
+settings:
+  page: true
+  page_submit_path: ''
+  page_confirm_path: ''
+  form_submit_label: ''
+  form_submit_once: false
+  form_submit_attributes: {  }
+  form_exception_message: ''
+  form_closed_message: ''
+  form_previous_submissions: true
+  form_confidential: false
+  form_confidential_message: ''
+  form_prepopulate: false
+  form_prepopulate_source_entity: false
+  form_disable_autocomplete: false
+  form_novalidate: false
+  form_unsaved: false
+  form_disable_back: false
+  form_autofocus: false
+  form_details_toggle: false
+  wizard_progress_bar: true
+  wizard_progress_pages: false
+  wizard_progress_percentage: false
+  wizard_next_button_label: ''
+  wizard_next_button_attributes: {  }
+  wizard_prev_button_label: ''
+  wizard_prev_button_attributes: {  }
+  wizard_start_label: ''
+  wizard_complete: true
+  wizard_complete_label: ''
+  preview: 0
+  preview_next_button_label: ''
+  preview_next_button_attributes: {  }
+  preview_prev_button_label: ''
+  preview_prev_button_attributes: {  }
+  preview_message: ''
+  draft: false
+  draft_auto_save: false
+  draft_button_label: ''
+  draft_button_attributes: {  }
+  draft_saved_message: ''
+  draft_loaded_message: ''
+  confirmation_type: page
+  confirmation_message: ''
+  confirmation_url: ''
+  confirmation_attributes: {  }
+  confirmation_back: true
+  confirmation_back_label: ''
+  confirmation_back_attributes: {  }
+  limit_total: null
+  limit_total_message: ''
+  limit_user: null
+  limit_user_message: ''
+  purge: none
+  purge_days: null
+  entity_limit_total: null
+  entity_limit_user: null
+  results_disabled: false
+  results_disabled_ignore: false
+  token_update: false
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+  view_any:
+    roles: {  }
+    users: {  }
+  update_any:
+    roles: {  }
+    users: {  }
+  delete_any:
+    roles: {  }
+    users: {  }
+  purge_any:
+    roles: {  }
+    users: {  }
+  view_own:
+    roles: {  }
+    users: {  }
+  update_own:
+    roles: {  }
+    users: {  }
+  delete_own:
+    roles: {  }
+    users: {  }
+handlers: {  }
