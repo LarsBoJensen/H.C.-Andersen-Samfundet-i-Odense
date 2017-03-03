@@ -29,13 +29,13 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Filter
+          submit_button: Filtrer
           reset_button: true
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
+          reset_button_label: Nulstil
+          exposed_sorts_label: 'Sorter efter'
           expose_sort_order: true
-          sort_asc_label: Asc
-          sort_desc_label: Desc
+          sort_asc_label: Stigende
+          sort_desc_label: Faldende
       pager:
         type: full
         options:
@@ -435,6 +435,9 @@ display:
             remember_roles:
               authenticated: authenticated
               anonymous: '0'
+              medlem: '0'
+              adgang_til_medlemsliste: '0'
+              redaktoer: '0'
               administrator: '0'
             reduce: false
           is_grouped: false
@@ -476,6 +479,9 @@ display:
             remember_roles:
               authenticated: authenticated
               anonymous: '0'
+              medlem: '0'
+              adgang_til_medlemsliste: '0'
+              redaktoer: '0'
               administrator: '0'
           is_grouped: false
           group_info:
@@ -516,6 +522,9 @@ display:
             remember_roles:
               authenticated: authenticated
               anonymous: '0'
+              medlem: '0'
+              adgang_til_medlemsliste: '0'
+              redaktoer: '0'
               administrator: '0'
             reduce: false
           is_grouped: false
@@ -534,7 +543,7 @@ display:
           entity_type: node
           entity_field: langcode
       sorts: {  }
-      title: Content
+      title: Indhold
       empty:
         area_text_custom:
           id: area_text_custom
@@ -578,16 +587,17 @@ display:
       path: admin/content/node
       menu:
         type: 'default tab'
-        title: Content
+        title: Indhold
         description: ''
-        menu_name: admin
+        expanded: false
+        parent: ''
         weight: -10
-        context: ''
+        context: '0'
+        menu_name: admin
       tab_options:
         type: normal
-        title: Content
-        description: 'Find and manage content'
-        menu_name: admin
+        title: Indhold
+        description: 'Find og administrer indhold'
         weight: -10
       display_extenders: {  }
     display_plugin: page
