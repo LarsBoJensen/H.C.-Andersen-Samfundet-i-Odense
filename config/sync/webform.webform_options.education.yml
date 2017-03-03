@@ -1,0 +1,12 @@
+uuid: 30abf8bc-d579-41c2-bfd4-8cb49f1334a3
+langcode: da
+status: true
+dependencies:
+  enforced:
+    module:
+      - webform
+_core:
+  default_config_hash: cidMez3wHXoTzTg_4KqylNWeDY2lYJ-DRLIAF7xq57M
+id: education
+label: Education
+options: "High School: High School\nAssociate Degree: Associate Degree\nAssociate Degree: Associate Degree\nGraduate or Professional Degree: Graduate or Professional Degree\nSome College: Some College\n"
