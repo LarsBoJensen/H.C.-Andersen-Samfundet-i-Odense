@@ -1,0 +1,25 @@
+uuid: 8b6dded0-58b6-486f-af09-72f55bc19e54
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.component_code_drop.field_code
+    - paragraphs.paragraphs_type.component_code_drop
+  module:
+    - component_code_drop
+_core:
+  default_config_hash: EbYN7HBJBt0D1ul3sISIp08sk8hAenJciwGF8fNe_QY
+id: paragraph.component_code_drop.default
+targetEntityType: paragraph
+bundle: component_code_drop
+mode: default
+content:
+  field_code:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: code_drop
+hidden:
+  created: true
+  uid: true

@@ -1,0 +1,25 @@
+uuid: edfc7859-b6f3-4f78-9e49-6c288f3aad6a
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.component_code_drop.field_code
+    - paragraphs.paragraphs_type.component_code_drop
+_core:
+  default_config_hash: NoPMYWHhCyyIulF9QKuIMaej1bfaqbQKQvUu86g_CWE
+id: paragraph.component_code_drop.default
+targetEntityType: paragraph
+bundle: component_code_drop
+mode: default
+content:
+  field_code:
+    weight: 0
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+hidden:
+  created: true
+  status: true
+  uid: true
