@@ -7,7 +7,7 @@ web/themes/contrib
 web/themes/custom/*/.DS_Store
 web/themes/custom/*/node_modules/*
 web/drush/contrib
-web/drush/custom
+#web/drush/custom
 bin/*
 
 # Ignore Drupal's public file directory
