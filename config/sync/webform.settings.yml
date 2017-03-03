@@ -2,7 +2,7 @@ settings:
   default_page_base_path: form
   default_form_closed_message: 'Sorry...This form is closed to new submissions.'
   default_form_exception_message: 'Unable to display this webform. Please contact the site administrator.'
-  default_form_submit_label: Submit
+  default_form_submit_label: Indsend
   default_form_submit_once: false
   default_form_confidential_message: 'This form is confidential. You must <a href="[site:login-url]/logout?destination=[current-page:url:relative]">Log out</a> to submit it.'
   default_form_disable_back: false
@@ -11,15 +11,15 @@ settings:
   default_form_details_toggle: true
   form_classes: "container-inline clearfix\nform--inline clearfix\nmessages messages--error\nmessages messages--warning\nmessages messages--status\n"
   button_classes: ''
-  default_wizard_prev_button_label: '< Previous Page'
-  default_wizard_next_button_label: 'Next Page >'
+  default_wizard_prev_button_label: '< Forrige side'
+  default_wizard_next_button_label: 'Næste side >'
   default_wizard_start_label: Start
-  default_wizard_complete_label: Complete
-  default_preview_next_button_label: Preview
+  default_wizard_complete_label: Komplet
+  default_preview_next_button_label: Gennemse
   default_preview_prev_button_label: '< Previous'
   default_preview_message: 'Please review your submission. Your submission is not complete until you press the "Submit" button!'
-  default_draft_button_label: 'Save Draft'
-  default_draft_saved_message: 'Submission saved. You may return to this form later and it will restore the current values.'
+  default_draft_button_label: 'Gem kladde'
+  default_draft_saved_message: 'Formular gemt. Du kan vende tilbage senere og gendanne standardværdierne.'
   default_draft_loaded_message: 'A partially-completed form was found. Please complete the remaining portions.'
   default_confirmation_message: 'New submission added to [webform:title].'
   default_confirmation_back_label: 'Back to form'

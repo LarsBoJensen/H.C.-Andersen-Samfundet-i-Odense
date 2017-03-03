@@ -10,7 +10,7 @@ _core:
 uid: null
 template: true
 id: template_registration
-title: Registration
+title: Tilmelding
 description: 'A registration webform template.'
 elements: "personal_information:\n  '#title': 'Your Personal Information'\n  '#type': fieldset\n  first_name:\n    '#title': 'First Name'\n    '#type': textfield\n    '#required': true\n  last_name:\n    '#title': 'Last Name'\n    '#type': textfield\n    '#required': true\ncontact_information:\n  '#title': 'Your Contact Information'\n  '#type': fieldset\n  contact:\n    '#type': webform_contact\n    '#title': Contact\n    '#title_display': invisible\n    '#name__access': false\n    '#company__access': false\nmailinglist:\n  '#title': 'Mailing List'\n  '#type': fieldset\n  subscribe:\n    '#title': 'Please subscribe me to your mailing list.'\n    '#type': checkbox\nadditional_information:\n  '#title': 'Additional Information'\n  '#type': fieldset\n  '#open': true\n  notes:\n    '#title': Comments\n    '#type': textarea\n"
 css: ''
@@ -19,7 +19,7 @@ settings:
   page: true
   page_submit_path: ''
   page_confirm_path: ''
-  form_submit_label: Register
+  form_submit_label: 'Opret konto'
   form_submit_once: false
   form_submit_attributes: {  }
   form_exception_message: ''
@@ -115,8 +115,8 @@ handlers:
       bcc_mail: ''
       from_mail: '[webform_submission:values:email:raw]'
       from_name: '[webform_submission:values:first_name] [webform_submission:values:last_name]'
-      subject: default
-      body: default
+      subject: standard
+      body: standard
       excluded_elements: {  }
       html: true
       attachments: false

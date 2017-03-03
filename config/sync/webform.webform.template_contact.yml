@@ -105,7 +105,7 @@ access:
 handlers:
   email_confirmation:
     id: email
-    label: 'Email confirmation'
+    label: E-mail-bekræftelse
     handler_id: email_confirmation
     status: true
     weight: 1
@@ -114,7 +114,7 @@ handlers:
       cc_mail: ''
       bcc_mail: ''
       from_mail: default
-      from_name: default
+      from_name: standard
       subject: '[webform_submission:values:subject:value]'
       body: '[webform_submission:values:message:value]'
       excluded_elements: {  }
@@ -123,7 +123,7 @@ handlers:
       debug: false
   email_notification:
     id: email
-    label: 'Email notification'
+    label: E-mail-notifikation
     handler_id: email_notification
     status: true
     weight: 1

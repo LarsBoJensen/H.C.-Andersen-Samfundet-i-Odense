@@ -115,8 +115,8 @@ handlers:
       bcc_mail: ''
       from_mail: '[webform_submission:values:email:raw]'
       from_name: '[webform_submission:values:first_name] [webform_submission:values:last_name]'
-      subject: default
-      body: default
+      subject: standard
+      body: standard
       excluded_elements: {  }
       html: true
       attachments: false
