@@ -1,0 +1,6 @@
+uuid: 133dae5b-bb66-404e-a8b9-023f8bc4dd27
+langcode: da
+status: true
+dependencies: {  }
+id: component_image
+label: Billede

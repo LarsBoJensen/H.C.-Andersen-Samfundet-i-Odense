@@ -1,0 +1,6 @@
+uuid: 51c7911c-731e-4cdd-80dc-b7073834020a
+langcode: da
+status: true
+dependencies: {  }
+id: component_quote
+label: Citat

@@ -1,0 +1,6 @@
+uuid: ea1d2112-6a37-4b8e-aa1c-a901e6bb7ac3
+langcode: da
+status: true
+dependencies: {  }
+id: component_slideshow
+label: Slideshow

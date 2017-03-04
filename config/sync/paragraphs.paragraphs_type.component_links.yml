@@ -1,0 +1,6 @@
+uuid: c95cd814-3faa-4be9-9d70-3ff8ffda405a
+langcode: da
+status: true
+dependencies: {  }
+id: component_links
+label: Links

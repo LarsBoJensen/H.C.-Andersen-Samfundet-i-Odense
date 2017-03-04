@@ -1,0 +1,6 @@
+uuid: aebcd15c-3e52-4013-aab0-2515f903704b
+langcode: da
+status: true
+dependencies: {  }
+id: component_text
+label: Tekst

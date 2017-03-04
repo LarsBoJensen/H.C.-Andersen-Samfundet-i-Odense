@@ -1,0 +1,6 @@
+uuid: 698934be-b903-4d40-a31c-245bf1695466
+langcode: da
+status: true
+dependencies: {  }
+id: component_formular
+label: Formular
