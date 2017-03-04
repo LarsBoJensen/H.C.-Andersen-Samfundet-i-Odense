@@ -1,0 +1,19 @@
+uuid: 391da096-2aaf-4661-89bb-c605382605a9
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_copyright
+    - paragraphs.paragraphs_type.component_image
+id: paragraph.component_image.field_copyright
+field_name: field_copyright
+entity_type: paragraph
+bundle: component_image
+label: 'Kilde / rettighedshaver'
+description: 'Hvis billedet kun må benyttes med kildeangivelse, skal den angives her.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

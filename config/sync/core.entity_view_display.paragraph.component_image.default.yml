@@ -1,0 +1,48 @@
+uuid: 4c95079c-93b4-46ef-aa43-615e0c35cb13
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.component_image.field_caption
+    - field.field.paragraph.component_image.field_copyright
+    - field.field.paragraph.component_image.field_image
+    - field.field.paragraph.component_image.field_url
+    - paragraphs.paragraphs_type.component_image
+  module:
+    - image
+id: paragraph.component_image.default
+targetEntityType: paragraph
+bundle: component_image
+mode: default
+content:
+  field_caption:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+  field_copyright:
+    weight: 3
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_image:
+    type: image
+    weight: 0
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+  field_url:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+hidden:
+  created: true
+  uid: true

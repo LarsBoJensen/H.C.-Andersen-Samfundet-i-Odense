@@ -3,6 +3,6 @@ langcode: de
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: Jvr7JkySdPv6FTSJZX5uU1mLLkokaYK3UaE4M0TORLo
+  default_config_hash: Iv9LRl5lSv9axlLBh5qUoiHWrxSZjIiukCn1eNUrpt8
 id: component_code_drop
-label: 'Code Snippet (NOT reusable!)'
+label: Kode
