@@ -1,0 +1,6 @@
+uuid: 414a25d2-0cab-40ef-9d7a-53e2f65335b6
+langcode: de
+status: true
+dependencies: {  }
+id: component_code_drop
+label: 'Kode'

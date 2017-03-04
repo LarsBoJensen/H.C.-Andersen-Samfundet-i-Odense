@@ -1,0 +1,9 @@
+{
+  "name": "comm-press/component_code_drop",
+  "type": "drupal-module-custom",
+  "description": "Provides a paragraph type for code to be integrated into content.",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "minimum-stability": "dev",
+  "require": { }
+}
