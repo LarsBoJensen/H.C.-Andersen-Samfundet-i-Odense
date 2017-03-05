@@ -1,8 +1,0 @@
-name: "Component Code Drop"
-description: "Provides a paragraph type for code to be integrated into content."
-type: module
-core: 8.x
-package: Content
-dependencies:
-  - entity_reference_revisions
-  - paragraphs
