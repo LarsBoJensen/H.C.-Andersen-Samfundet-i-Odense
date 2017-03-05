@@ -1,0 +1,22 @@
+uuid: 62f57a9d-1a1c-429f-87b3-d2ebbbe29752
+langcode: da
+status: true
+dependencies:
+  module:
+    - node
+id: events
+label: Arrangementer
+type: 'canonical_entities:node'
+pattern: 'det-sker/[node:title]'
+selection_criteria:
+  abaa3eb4-0ef1-4809-8a23-65b534c01ffd:
+    id: node_type
+    bundles:
+      arrangement: arrangement
+    negate: false
+    context_mapping:
+      node: node
+    uuid: abaa3eb4-0ef1-4809-8a23-65b534c01ffd
+selection_logic: and
+weight: -5
+relationships: {  }

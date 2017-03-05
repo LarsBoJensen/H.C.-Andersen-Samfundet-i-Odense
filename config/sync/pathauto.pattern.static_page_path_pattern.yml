@@ -1,0 +1,22 @@
+uuid: 7853d835-4012-4222-9cfb-d904157bcf6d
+langcode: da
+status: true
+dependencies:
+  module:
+    - node
+id: static_page_path_pattern
+label: 'Statiske sider'
+type: 'canonical_entities:node'
+pattern: '[node:title]'
+selection_criteria:
+  06da515c-5848-403c-a8b4-5c64265ca22f:
+    id: node_type
+    bundles:
+      static_page: static_page
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 06da515c-5848-403c-a8b4-5c64265ca22f
+selection_logic: and
+weight: -5
+relationships: {  }

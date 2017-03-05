@@ -1,0 +1,22 @@
+uuid: 3e427d32-8cad-4d9b-a19e-8cfe42c5223c
+langcode: da
+status: true
+dependencies:
+  module:
+    - node
+id: anderseniana
+label: Anderseniana
+type: 'canonical_entities:node'
+pattern: 'anderseniana/[node:title]'
+selection_criteria:
+  6fb7de0f-2b1d-4e1f-b706-1aec7354c5ee:
+    id: node_type
+    bundles:
+      anderseniana: anderseniana
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 6fb7de0f-2b1d-4e1f-b706-1aec7354c5ee
+selection_logic: and
+weight: -5
+relationships: {  }
