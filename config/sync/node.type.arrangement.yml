@@ -1,0 +1,17 @@
+uuid: a3a920c5-2401-4ecb-9600-7ad84a88473e
+langcode: da
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Arrangement
+type: arrangement
+description: 'Arrangementer er f.eks. møder, udflugter og foredrag.'
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: true

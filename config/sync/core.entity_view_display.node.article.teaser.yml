@@ -1,0 +1,22 @@
+uuid: 35c43af6-93c7-457f-b42c-c11327592742
+langcode: da
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.article.field_components
+    - field.field.node.article.field_metatags
+    - node.type.article
+  module:
+    - user
+id: node.article.teaser
+targetEntityType: node
+bundle: article
+mode: teaser
+content:
+  links:
+    weight: 100
+hidden:
+  field_components: true
+  field_metatags: true
+  langcode: true

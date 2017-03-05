@@ -1,0 +1,18 @@
+uuid: 946e3c37-cf0a-4cdb-b65d-3d7ea1d75275
+langcode: da
+status: true
+dependencies:
+  config:
+    - node.type.arrangement
+id: node.arrangement.title
+field_name: title
+entity_type: node
+bundle: arrangement
+label: Overskrift
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

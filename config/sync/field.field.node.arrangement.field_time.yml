@@ -1,0 +1,21 @@
+uuid: 7eba303b-9e9c-4d3b-958f-ebc9cd8c83e1
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_time
+    - node.type.arrangement
+  module:
+    - datetime
+id: node.arrangement.field_time
+field_name: field_time
+entity_type: node
+bundle: arrangement
+label: Dato
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

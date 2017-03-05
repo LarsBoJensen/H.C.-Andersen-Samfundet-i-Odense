@@ -1,0 +1,20 @@
+uuid: 24fd02dd-da0c-4c54-82e9-77018cf36631
+langcode: da
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.static_page.field_components
+    - node.type.static_page
+  module:
+    - user
+id: node.static_page.teaser
+targetEntityType: node
+bundle: static_page
+mode: teaser
+content:
+  links:
+    weight: 100
+hidden:
+  field_components: true
+  langcode: true

@@ -1,0 +1,45 @@
+uuid: 4c4c22e6-5c49-41ed-9ffb-d889ec079fbc
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.field.node.arrangement.field_components
+    - field.field.node.arrangement.field_metatags
+    - field.field.node.arrangement.field_time
+    - node.type.arrangement
+  module:
+    - datetime
+    - entity_reference_revisions
+    - metatag
+    - user
+id: node.arrangement.default
+targetEntityType: node
+bundle: arrangement
+mode: default
+content:
+  field_components:
+    weight: 101
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+  field_metatags:
+    weight: 103
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_empty_formatter
+  field_time:
+    weight: 102
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+  links:
+    weight: 100
+hidden:
+  langcode: true

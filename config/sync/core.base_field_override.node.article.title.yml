@@ -1,0 +1,18 @@
+uuid: 462ecca1-5169-4e69-9fb8-43f4a3a4efe0
+langcode: da
+status: true
+dependencies:
+  config:
+    - node.type.article
+id: node.article.title
+field_name: title
+entity_type: node
+bundle: article
+label: Overskrift
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

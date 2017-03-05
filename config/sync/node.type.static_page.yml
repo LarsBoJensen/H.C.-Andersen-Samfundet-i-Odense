@@ -1,0 +1,19 @@
+uuid: feb771db-c8f8-43dc-8e88-38aa163666a7
+langcode: da
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - footer
+      - main
+    parent: 'main:'
+name: 'Statisk side'
+type: static_page
+description: 'En blivende side, hvor tidspunkter er irrelevante. Eksempelvis: betalingsoplysninger eller vores cookie-politik.'
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: false

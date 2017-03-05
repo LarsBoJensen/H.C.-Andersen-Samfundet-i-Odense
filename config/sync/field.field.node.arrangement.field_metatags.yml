@@ -1,0 +1,23 @@
+uuid: efe63242-b3b2-4c7e-84d6-ada0e8538fd7
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_metatags
+    - node.type.arrangement
+  module:
+    - metatag
+id: node.arrangement.field_metatags
+field_name: field_metatags
+entity_type: node
+bundle: arrangement
+label: Metatags
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 'a:0:{}'
+default_value_callback: ''
+settings: {  }
+field_type: metatag
