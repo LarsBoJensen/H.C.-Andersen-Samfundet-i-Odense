@@ -1,0 +1,40 @@
+uuid: 907b3ca2-d918-4003-8b19-6de4f1cfa856
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.component_slideshow.field_caption
+    - field.field.paragraph.component_slideshow.field_header
+    - field.field.paragraph.component_slideshow.field_images
+    - paragraphs.paragraphs_type.component_slideshow
+  module:
+    - image
+id: paragraph.component_slideshow.default
+targetEntityType: paragraph
+bundle: component_slideshow
+mode: default
+content:
+  field_caption:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+  field_header:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_images:
+    weight: 1
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+hidden:
+  created: true
+  uid: true

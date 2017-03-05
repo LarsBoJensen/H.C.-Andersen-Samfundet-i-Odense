@@ -1,0 +1,31 @@
+uuid: 530bcf5d-4f4b-4217-995e-5314b5aa901e
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.component_file.field_file
+    - field.field.paragraph.component_file.field_text
+    - paragraphs.paragraphs_type.component_file
+  module:
+    - file
+    - text
+id: paragraph.component_file.default
+targetEntityType: paragraph
+bundle: component_file
+mode: default
+content:
+  field_file:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: file_default
+  field_text:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+hidden:
+  created: true
+  uid: true

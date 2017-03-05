@@ -1,0 +1,31 @@
+uuid: 59fe7b6c-a39b-48a6-93e3-22b8fa3196a4
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.component_quote.field_copyright
+    - field.field.paragraph.component_quote.field_quote
+    - paragraphs.paragraphs_type.component_quote
+id: paragraph.component_quote.default
+targetEntityType: paragraph
+bundle: component_quote
+mode: default
+content:
+  field_copyright:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  field_quote:
+    weight: 0
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+hidden:
+  created: true
+  status: true
+  uid: true

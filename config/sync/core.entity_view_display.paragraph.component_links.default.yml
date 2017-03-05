@@ -1,0 +1,28 @@
+uuid: e076c228-eef8-40e9-9cbb-b4b7bf568c8c
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.component_links.field_link
+    - paragraphs.paragraphs_type.component_links
+  module:
+    - link
+id: paragraph.component_links.default
+targetEntityType: paragraph
+bundle: component_links
+mode: default
+content:
+  field_link:
+    weight: 0
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+hidden:
+  created: true
+  uid: true

@@ -1,0 +1,21 @@
+uuid: 991567b7-54c4-40be-b8b2-bcb5bcdef97c
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text
+    - paragraphs.paragraphs_type.component_file
+  module:
+    - text
+id: paragraph.component_file.field_text
+field_name: field_text
+entity_type: paragraph
+bundle: component_file
+label: Beskrivelse
+description: 'En beskrivelse af eller indledning til filerne. Den vises over listen med filer.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,42 @@
+uuid: 5b2243cf-2f76-4951-bae5-dc126983c3b1
+langcode: da
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.component_slideshow.field_caption
+    - field.field.paragraph.component_slideshow.field_header
+    - field.field.paragraph.component_slideshow.field_images
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.component_slideshow
+  module:
+    - image
+id: paragraph.component_slideshow.preview
+targetEntityType: paragraph
+bundle: component_slideshow
+mode: preview
+content:
+  field_caption:
+    type: basic_string
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+  field_header:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_images:
+    weight: 1
+    label: hidden
+    settings:
+      image_style: thumbnail
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+hidden:
+  created: true
+  uid: true

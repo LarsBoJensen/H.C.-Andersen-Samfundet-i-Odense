@@ -1,0 +1,19 @@
+uuid: 83d0abf7-b996-42b1-b309-46656f3bb612
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_quote
+    - paragraphs.paragraphs_type.component_quote
+id: paragraph.component_quote.field_quote
+field_name: field_quote
+entity_type: paragraph
+bundle: component_quote
+label: Citat
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

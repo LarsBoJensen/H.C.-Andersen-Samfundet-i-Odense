@@ -1,0 +1,32 @@
+uuid: d460d8bb-1b99-4bcf-84ef-30ff2d64cb8a
+langcode: da
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.component_file.field_file
+    - field.field.paragraph.component_file.field_text
+    - paragraphs.paragraphs_type.component_file
+  module:
+    - file
+    - text
+id: paragraph.component_file.preview
+targetEntityType: paragraph
+bundle: component_file
+mode: preview
+content:
+  field_file:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: file_default
+  field_text:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+hidden:
+  created: true
+  uid: true

@@ -1,0 +1,23 @@
+uuid: 5572d23b-9421-411e-8654-ccf9a78b035c
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.component_formular.field_webform
+    - paragraphs.paragraphs_type.component_formular
+  module:
+    - webform
+id: paragraph.component_formular.default
+targetEntityType: paragraph
+bundle: component_formular
+mode: default
+content:
+  field_webform:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: webform_entity_reference_select
+hidden:
+  created: true
+  status: true
+  uid: true

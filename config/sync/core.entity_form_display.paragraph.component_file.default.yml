@@ -1,0 +1,33 @@
+uuid: ad0b1738-aa97-4cdf-8b8b-b0abb989637f
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.component_file.field_file
+    - field.field.paragraph.component_file.field_text
+    - paragraphs.paragraphs_type.component_file
+  module:
+    - file
+    - text
+id: paragraph.component_file.default
+targetEntityType: paragraph
+bundle: component_file
+mode: default
+content:
+  field_file:
+    weight: 1
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+  field_text:
+    weight: 0
+    settings:
+      rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+hidden:
+  created: true
+  status: true
+  uid: true

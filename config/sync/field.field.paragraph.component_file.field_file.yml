@@ -1,0 +1,27 @@
+uuid: b9b9df48-c118-4a5c-b651-e13e7bf06535
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_file
+    - paragraphs.paragraphs_type.component_file
+  module:
+    - file
+id: paragraph.component_file.field_file
+field_name: field_file
+entity_type: paragraph
+bundle: component_file
+label: Filer
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: documents
+  file_extensions: 'txt pdf ppt pptx doc docx'
+  max_filesize: ''
+  description_field: true
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

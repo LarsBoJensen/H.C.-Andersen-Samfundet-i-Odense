@@ -1,0 +1,27 @@
+uuid: 6edb89a7-fd8e-45ea-b4ce-4c0be99f9307
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_webform
+    - paragraphs.paragraphs_type.component_formular
+  module:
+    - webform
+id: paragraph.component_formular.field_webform
+field_name: field_webform
+entity_type: paragraph
+bundle: component_formular
+label: Formular
+description: 'Her kan kun refereres til en eksisterende formular. Formularer anlægges og forvaltes under <a href="/admin/structure/webform">/admin/structure/webform</a>.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:webform'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+  default_data: ''
+  status: true
+field_type: webform

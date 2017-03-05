@@ -13,7 +13,7 @@ entity_type: paragraph
 bundle: component_text
 label: Tekst
 description: ''
-required: false
+required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''
