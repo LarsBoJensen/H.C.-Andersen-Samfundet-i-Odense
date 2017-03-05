@@ -13,11 +13,16 @@
     {
       "type": "composer",
       "url": "https://packages.drupal.org/8"
+    },
+    {
+      "type": "composer",
+      "url": "http://build.comm-press.de:8383"
     }
   ],
   "require": {
     "composer/installers": "^1.0.20",
     "cweagans/composer-patches": "~1.0",
+    "comm-press/component_code_drop": "801.x-dev",
 
     "drupal/core": "~8.0",
 
@@ -53,7 +58,7 @@
   "config": {
     "preferred-install": "source",
     "bin-dir": "bin/",
-    "secure-http": true
+    "secure-http": false
   },
   "minimum-stability": "dev",
   "prefer-stable": true,
@@ -73,6 +78,9 @@
       ],
       "web/modules/contrib/{$name}": [
         "type:drupal-module"
+      ],
+      "web/modules/custom/{$name}": [
+        "type:drupal-module-custom"
       ],
       "web/profiles/contrib/{$name}": [
         "type:drupal-profile"

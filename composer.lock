@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "26ef717c03a71e0ebe9edf9c2a77ab83",
+    "content-hash": "5802dcd884a4efcaf8b479bbc32d80df",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -48,6 +48,30 @@
                 "stack"
             ],
             "time": "2016-08-01T12:05:04+00:00"
+        },
+        {
+            "name": "comm-press/component_code_drop",
+            "version": "801.x-dev",
+            "source": {
+                "type": "git",
+                "url": "git@bitbucket.org:comm-press/component_code_drop.git",
+                "reference": "d2fa568d2645968c6d4b5aba6ab6cadedf008c08"
+            },
+            "dist": {
+                "type": "tar",
+                "url": "http://build.comm-press.de:8383/dist/comm-press-component_code_drop-801.x-dev-134ea3.tar",
+                "reference": "d2fa568d2645968c6d4b5aba6ab6cadedf008c08",
+                "shasum": "482b9d9aa2e170b9858d7ac15b9dd3435894881e"
+            },
+            "type": "drupal-module-custom",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Provides a paragraph type for code to be integrated into content.",
+            "keywords": [
+                "Drupal"
+            ],
+            "time": "2017-01-05 16:16:13"
         },
         {
             "name": "composer/installers",
@@ -1620,7 +1644,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/mailsystem-8.x-4.1.zip",
-                "reference": null,
+                "reference": "8.x-4.1",
                 "shasum": "318b87f1fdf96e6db30b04a98108af02a0fc3dcc"
             },
             "require": {
@@ -7076,6 +7100,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "comm-press/component_code_drop": 20,
         "drupal/conditional_fields": 20,
         "drupal/media_entity": 20,
         "drupal/metatag": 20,

@@ -2,6 +2,7 @@
 vendor
 web/core
 web/modules/contrib
+web/modules/custom
 web/profiles/contrib
 web/themes/contrib
 web/themes/custom/*/.DS_Store
