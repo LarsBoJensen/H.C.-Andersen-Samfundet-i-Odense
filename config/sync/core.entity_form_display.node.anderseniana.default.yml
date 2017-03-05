@@ -1,31 +1,40 @@
-uuid: 9c7548cf-a9c5-404b-a352-2d4f73cdd866
+uuid: e534fcc2-20de-462e-8e4d-09d329df97ca
 langcode: da
 status: true
 dependencies:
   config:
-    - field.field.node.article.field_components
-    - field.field.node.article.field_event_type
-    - field.field.node.article.field_metatags
-    - field.field.node.article.field_tags
-    - field.field.node.article.field_teaser_text
-    - node.type.article
+    - field.field.node.anderseniana.field_aiana_cover_image
+    - field.field.node.anderseniana.field_components
+    - field.field.node.anderseniana.field_metatags
+    - field.field.node.anderseniana.field_teaser_header
+    - field.field.node.anderseniana.field_teaser_text
+    - image.style.medium
+    - node.type.anderseniana
   module:
+    - image
     - metatag
     - paragraphs
     - path
     - text
-id: node.article.default
+id: node.anderseniana.default
 targetEntityType: node
-bundle: article
+bundle: anderseniana
 mode: default
 content:
   created:
     type: datetime_timestamp
-    weight: 3
+    weight: 10
     settings: {  }
     third_party_settings: {  }
+  field_aiana_cover_image:
+    weight: 32
+    settings:
+      preview_image_style: medium
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: image_image
   field_components:
-    weight: 9
+    weight: 35
     settings:
       title: Paragraph
       title_plural: Paragraphs
@@ -34,26 +43,20 @@ content:
       form_display_mode: default
     third_party_settings: {  }
     type: entity_reference_paragraphs
-  field_event_type:
-    weight: 8
-    settings: {  }
-    third_party_settings: {  }
-    type: options_buttons
   field_metatags:
-    weight: 11
+    weight: 36
     settings: {  }
     third_party_settings: {  }
     type: metatag_firehose
-  field_tags:
-    weight: 10
+  field_teaser_header:
+    weight: 33
     settings:
-      match_operator: CONTAINS
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: string_textfield
   field_teaser_text:
-    weight: 7
+    weight: 34
     settings:
       rows: 5
       placeholder: ''
@@ -61,36 +64,36 @@ content:
     type: text_textarea
   langcode:
     type: language_select
-    weight: 1
+    weight: 2
     settings: {  }
     third_party_settings: {  }
   path:
     type: path
-    weight: 6
+    weight: 30
     settings: {  }
     third_party_settings: {  }
   promote:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 4
+    weight: 15
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 5
+    weight: 16
     third_party_settings: {  }
   title:
     type: string_textfield
-    weight: 0
+    weight: -5
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 2
+    weight: 5
     settings:
       match_operator: CONTAINS
       size: 60

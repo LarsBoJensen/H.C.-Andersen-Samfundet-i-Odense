@@ -1,0 +1,22 @@
+uuid: 41b4222b-3b56-45d7-ab26-4c3505eba1a0
+langcode: da
+status: true
+dependencies:
+  config:
+    - node.type.anderseniana
+id: node.anderseniana.status
+field_name: status
+entity_type: node
+bundle: anderseniana
+label: Publiceringsstatus
+description: 'En boolsk værdi som angiver hvorvidt indholdselementets er udgivet.'
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Tilsluttet
+  off_label: Afbrudt
+field_type: boolean

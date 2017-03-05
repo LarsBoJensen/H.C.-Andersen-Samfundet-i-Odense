@@ -1,0 +1,28 @@
+uuid: 17311fbf-4449-49cd-886d-7f3b7ff45b14
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_event_type
+    - node.type.article
+    - taxonomy.vocabulary.event_type
+id: node.article.field_event_type
+field_name: field_event_type
+entity_type: node
+bundle: article
+label: Arrangement-type
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      event_type: event_type
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

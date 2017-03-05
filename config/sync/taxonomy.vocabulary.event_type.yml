@@ -1,0 +1,9 @@
+uuid: b36485e6-442a-45c0-be38-95a09d991c9e
+langcode: da
+status: true
+dependencies: {  }
+name: Arrangementtype
+vid: event_type
+description: ''
+hierarchy: 0
+weight: 0

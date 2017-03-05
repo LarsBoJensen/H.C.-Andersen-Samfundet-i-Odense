@@ -4,7 +4,10 @@ status: true
 dependencies:
   config:
     - field.field.node.article.field_components
+    - field.field.node.article.field_event_type
     - field.field.node.article.field_metatags
+    - field.field.node.article.field_tags
+    - field.field.node.article.field_teaser_text
     - node.type.article
   module:
     - entity_reference_revisions
@@ -23,15 +26,31 @@ content:
       link: ''
     third_party_settings: {  }
     type: entity_reference_revisions_entity_view
+  field_event_type:
+    type: entity_reference_entity_view
+    weight: 3
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
   field_metatags:
     weight: 2
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: metatag_empty_formatter
+  field_tags:
+    weight: 4
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
   links:
     weight: 0
     settings: {  }
     third_party_settings: {  }
 hidden:
+  field_teaser_text: true
   langcode: true

@@ -1,0 +1,21 @@
+uuid: aa806db7-8150-4db9-9097-df830dccec6d
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_teaser_text
+    - node.type.arrangement
+  module:
+    - text
+id: node.arrangement.field_teaser_text
+field_name: field_teaser_text
+entity_type: node
+bundle: arrangement
+label: Teaser-Tekst
+description: 'Teaser-tekst bruges overalt, hvor indhold vises i kort form, bl.a. på startsiden.'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

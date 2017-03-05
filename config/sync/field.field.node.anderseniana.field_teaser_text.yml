@@ -1,0 +1,21 @@
+uuid: 9b7dae68-f9c1-4172-933c-b027854bee1d
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_teaser_text
+    - node.type.anderseniana
+  module:
+    - text
+id: node.anderseniana.field_teaser_text
+field_name: field_teaser_text
+entity_type: node
+bundle: anderseniana
+label: Teaser-Tekst
+description: 'Teaser-tekst bruges overalt, hvor indhold vises i kort form, bl.a. på startsiden.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

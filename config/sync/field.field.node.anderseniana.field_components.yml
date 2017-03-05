@@ -1,0 +1,65 @@
+uuid: 0e57d8f2-f1af-4ec2-a405-a3c42bac45d7
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_components
+    - node.type.anderseniana
+    - paragraphs.paragraphs_type.component_code_drop
+    - paragraphs.paragraphs_type.component_file
+    - paragraphs.paragraphs_type.component_formular
+    - paragraphs.paragraphs_type.component_image
+    - paragraphs.paragraphs_type.component_links
+    - paragraphs.paragraphs_type.component_quote
+    - paragraphs.paragraphs_type.component_slideshow
+    - paragraphs.paragraphs_type.component_text
+  module:
+    - entity_reference_revisions
+id: node.anderseniana.field_components
+field_name: field_components
+entity_type: node
+bundle: anderseniana
+label: Komponenter
+description: 'Til Anderseniana er med <em>komponenter</em> især tænkt på en simpel oversigt over artikler.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      component_code_drop: component_code_drop
+      component_file: component_file
+      component_formular: component_formular
+      component_image: component_image
+      component_links: component_links
+      component_quote: component_quote
+      component_slideshow: component_slideshow
+      component_text: component_text
+    target_bundles_drag_drop:
+      component_code_drop:
+        weight: 9
+        enabled: false
+      component_file:
+        weight: 10
+        enabled: false
+      component_formular:
+        weight: 11
+        enabled: false
+      component_image:
+        weight: 12
+        enabled: false
+      component_links:
+        weight: 13
+        enabled: false
+      component_quote:
+        weight: 14
+        enabled: false
+      component_slideshow:
+        weight: 15
+        enabled: false
+      component_text:
+        weight: 16
+        enabled: false
+field_type: entity_reference_revisions

@@ -1,0 +1,18 @@
+uuid: da62b582-dc8b-460a-aa8d-6f7a502cc2d8
+langcode: da
+status: true
+dependencies:
+  config:
+    - node.type.anderseniana
+id: node.anderseniana.title
+field_name: title
+entity_type: node
+bundle: anderseniana
+label: Årgang
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

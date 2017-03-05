@@ -1,0 +1,19 @@
+uuid: 0a4358a6-2ba2-4b40-82c4-bb09071878a0
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_teaser_header
+    - node.type.anderseniana
+id: node.anderseniana.field_teaser_header
+field_name: field_teaser_header
+entity_type: node
+bundle: anderseniana
+label: Teaser-overskrift
+description: 'Teaser-overskriften bruges, når et Anderseniana vises i kort form, bl.a. på startsiden.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

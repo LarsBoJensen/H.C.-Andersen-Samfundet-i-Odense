@@ -1,0 +1,23 @@
+uuid: 921744f1-84c0-4cc8-a700-79ce9321c65a
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_metatags
+    - node.type.anderseniana
+  module:
+    - metatag
+id: node.anderseniana.field_metatags
+field_name: field_metatags
+entity_type: node
+bundle: anderseniana
+label: Metatags
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 'a:0:{}'
+default_value_callback: ''
+settings: {  }
+field_type: metatag
