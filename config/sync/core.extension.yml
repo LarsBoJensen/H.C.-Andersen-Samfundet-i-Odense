@@ -27,6 +27,7 @@ module:
   help: 0
   honeypot: 0
   image: 0
+  image_captcha: 0
   language: 0
   libraries: 0
   link: 0
