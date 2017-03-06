@@ -67,6 +67,7 @@ module:
   views_ui: 0
   webform: 0
   webform_examples: 0
+  webform_layout_container: 0
   webform_node: 0
   webform_templates: 0
   webform_ui: 0
