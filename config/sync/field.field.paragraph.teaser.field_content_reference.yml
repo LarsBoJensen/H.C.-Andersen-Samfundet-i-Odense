@@ -1,0 +1,34 @@
+uuid: 814cb461-2d45-49b6-8414-b063c4b9832a
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_content_reference
+    - node.type.anderseniana
+    - node.type.arrangement
+    - node.type.article
+    - node.type.static_page
+    - paragraphs.paragraphs_type.teaser
+id: paragraph.teaser.field_content_reference
+field_name: field_content_reference
+entity_type: paragraph
+bundle: teaser
+label: Side
+description: 'Vælg en eksisterende side, som skal vises i det komprimerede teaser-format.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      anderseniana: anderseniana
+      arrangement: arrangement
+      article: article
+      static_page: static_page
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: article
+field_type: entity_reference

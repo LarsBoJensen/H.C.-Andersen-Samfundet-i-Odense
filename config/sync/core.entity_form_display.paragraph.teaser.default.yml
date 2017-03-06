@@ -1,0 +1,24 @@
+uuid: 25bc6592-1e14-409a-8b20-6f1d627f2292
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.teaser.field_content_reference
+    - paragraphs.paragraphs_type.teaser
+id: paragraph.teaser.default
+targetEntityType: paragraph
+bundle: teaser
+mode: default
+content:
+  field_content_reference:
+    weight: 0
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+hidden:
+  created: true
+  status: true
+  uid: true

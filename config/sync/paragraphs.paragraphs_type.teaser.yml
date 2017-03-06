@@ -1,0 +1,6 @@
+uuid: fa24c4d1-715e-4388-b7f5-2b86db1b78b0
+langcode: da
+status: true
+dependencies: {  }
+id: teaser
+label: Teaser
