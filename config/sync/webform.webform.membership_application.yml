@@ -8,16 +8,16 @@ uid: 1
 template: false
 id: membership_application
 title: 'Bliv medlem'
-description: ''
+description: 'En ans&oslash;gningsformular om medlemskab af H.C. Andersen-Samfundet'
 elements: "names:\n  '#type': webform_flexbox\n  first_name:\n    '#type': textfield\n    '#title': Fornavn(e)\n    '#required': true\n  last_name:\n    '#type': textfield\n    '#title': Efternavn\n    '#required': true\ne_mail:\n  '#type': email\n  '#title': E-mail\n  '#description': 'Vi sparer b&aring;de porto og besv&aelig;r, hvis du giver os din e-mail-adresse, s&aring; det g&oslash;r os meget glade.'\n  '#title_display': before\n  '#description_display': after\nadresse:\n  '#type': webform_address\n  '#title': Adresse\n  '#required': true\n  '#address__title': 'Gade, husnr., sal, side'\n  '#address__required': true\n  '#address_2__title': 'Bydel / ekstra angivelser'\n  '#postal_code__required': true\n  '#city__title': By\n  '#city__required': true\n  '#state_province__access': false\ntelephone:\n  '#type': tel\n  '#title': Telefon\n  '#description': 'Hvis du &oslash;nsker, at vi kan ringe dig op, kan du give os dit telefonnummer.'\n  '#description_display': after\n  '#international': true\nadministration:\n  '#type': fieldset\n  '#title': Administration\n  '#open': true\n  '#required': true\n  '#access_create_roles':\n    - redaktoer\n    - administrator\n  '#access_update_roles':\n    - redaktoer\n    - administrator\n  '#access_view_roles':\n    - adgang_til_medlemsliste\n    - redaktoer\n    - administrator\n  is_member:\n    '#type': webform_toggle\n    '#title': 'Er medlem'\n    '#default_value': '0'\n    '#access_create_roles':\n      - redaktoer\n      - administrator\n    '#access_update_roles':\n      - redaktoer\n      - administrator\n    '#access_view_roles':\n      - adgang_til_medlemsliste\n      - redaktoer\n      - administrator\n    '#on_text': ja\n    '#off_text': nej\n  has_paid:\n    '#type': webform_toggle\n    '#title': 'Har betalt kontingent'\n    '#default_value': '0'\n    '#access_create_roles':\n      - redaktoer\n      - administrator\n    '#access_update_roles':\n      - redaktoer\n      - administrator\n    '#access_view_roles':\n      - adgang_til_medlemsliste\n      - redaktoer\n      - administrator\n    '#on_text': ja\n    '#off_text': nej\n"
 css: ''
 javascript: ''
 settings:
   page: true
-  page_submit_path: ''
-  page_confirm_path: ''
+  page_submit_path: indmelding
+  page_confirm_path: indmelding/tak
   form_submit_label: ''
-  form_submit_once: false
+  form_submit_once: true
   form_submit_attributes: {  }
   form_exception_message: ''
   form_closed_message: ''
@@ -54,25 +54,27 @@ settings:
   draft_button_attributes: {  }
   draft_saved_message: ''
   draft_loaded_message: ''
-  confirmation_type: message
-  confirmation_title: ''
-  confirmation_message: ''
-  confirmation_url: ''
-  confirmation_attributes: {  }
-  confirmation_back: true
+  confirmation_type: inline
+  confirmation_title: Velkommen!
+  confirmation_message: 'Tak for din indmelding. Vi vender tilbage med en bekr&aelig;ftelse og yderligere oplysninger om medlemskab.'
+  confirmation_url: /tak
+  confirmation_attributes:
+    class:
+      - 'messages messages--status'
+  confirmation_back: false
   confirmation_back_label: ''
   confirmation_back_attributes: {  }
   limit_total: null
   limit_total_message: ''
-  limit_user: null
-  limit_user_message: ''
+  limit_user: 1
+  limit_user_message: "Du har allerede sendt denne formular ind, og man kan kun s&oslash;ge om &eacute;t medlemskab. Vi vender tilbage til dig.<br />\r\n<br />\r\nMed venlig hilsen,<br />\r\nH.C Andersen-Samfundet i Odense"
   purge: none
   purge_days: null
   entity_limit_total: null
-  entity_limit_user: null
+  entity_limit_user: 1
   results_disabled: false
   results_disabled_ignore: false
-  token_update: false
+  token_update: true
 access:
   create:
     roles:
