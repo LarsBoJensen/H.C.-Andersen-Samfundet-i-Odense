@@ -47,7 +47,8 @@
     "drupal/clientside_validation": "^1.0@RC",
     "drupal/captcha": "^1.0@beta",
     "drupal/webform_layout_container": "^1.0",
-    "drupal/libraries": "3.x-dev"
+    "drupal/libraries": "3.x-dev",
+    "drupal/webform_views": "5.x-dev"
   },
   "require-dev": {
     "behat/mink": "~1.7",
@@ -70,6 +71,9 @@
       },
       "drupal/core": {
         "Fix bug in aggregator core module.": "https://bitbucket.org/comm-press/patches/raw/cc24422eb55b76fd2b20edc33ad5ceef9911c08e/drupal/core/core-aggregator.patch"
+      },
+      "drupal/webform": {
+        "Makes drupal/webform composite address field output addresses in Danish/European format": "https://raw.githubusercontent.com/LarsBoJensen/patches/master/danish-composite-address-field-output.patch"
       }
     },
     "installer-paths": {
