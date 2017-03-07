@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "27e939aea37c8897008eb79af3b9e3d8",
+    "content-hash": "d78aebd34698fcf339444490a6783d9d",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2234,7 +2234,8 @@
                     "datestamp": "1488753784"
                 },
                 "patches_applied": {
-                    "Makes drupal/webform composite address field output addresses in Danish/European format": "https://raw.githubusercontent.com/LarsBoJensen/patches/master/danish-composite-address-field-output.patch"
+                    "Makes drupal/webform composite address field output addresses in Danish/European format": "https://raw.githubusercontent.com/LarsBoJensen/patches/master/danish-composite-address-field-output.patch",
+                    "Makes drupal/webform composite address field order Danish/European format": "https://raw.githubusercontent.com/LarsBoJensen/patches/master/danish-composite-address-field-order.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",

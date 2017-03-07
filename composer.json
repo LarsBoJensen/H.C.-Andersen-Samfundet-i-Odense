@@ -73,7 +73,8 @@
         "Fix bug in aggregator core module.": "https://bitbucket.org/comm-press/patches/raw/cc24422eb55b76fd2b20edc33ad5ceef9911c08e/drupal/core/core-aggregator.patch"
       },
       "drupal/webform": {
-        "Makes drupal/webform composite address field output addresses in Danish/European format": "https://raw.githubusercontent.com/LarsBoJensen/patches/master/danish-composite-address-field-output.patch"
+        "Makes drupal/webform composite address field output addresses in Danish/European format": "https://raw.githubusercontent.com/LarsBoJensen/patches/master/danish-composite-address-field-output.patch",
+        "Makes drupal/webform composite address field order Danish/European format": "https://raw.githubusercontent.com/LarsBoJensen/patches/master/danish-composite-address-field-order.patch"
       }
     },
     "installer-paths": {
