@@ -3,6 +3,7 @@ langcode: da
 status: true
 dependencies:
   config:
+    - field.field.paragraph.component_formular.field_header
     - field.field.paragraph.component_formular.field_webform
     - paragraphs.paragraphs_type.component_formular
   module:
@@ -12,8 +13,15 @@ targetEntityType: paragraph
 bundle: component_formular
 mode: default
 content:
-  field_webform:
+  field_header:
     weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  field_webform:
+    weight: 1
     settings: {  }
     third_party_settings: {  }
     type: webform_entity_reference_select

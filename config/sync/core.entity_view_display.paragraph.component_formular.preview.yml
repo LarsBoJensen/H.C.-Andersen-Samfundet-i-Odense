@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.component_formular.field_header
     - field.field.paragraph.component_formular.field_webform
     - paragraphs.paragraphs_type.component_formular
   module:
@@ -13,8 +14,15 @@ targetEntityType: paragraph
 bundle: component_formular
 mode: preview
 content:
-  field_webform:
+  field_header:
+    type: string
     weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_webform:
+    weight: 1
     label: hidden
     settings:
       label: '[webform:title]'
