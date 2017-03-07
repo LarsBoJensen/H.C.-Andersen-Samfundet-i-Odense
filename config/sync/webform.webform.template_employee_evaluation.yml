@@ -1,12 +1,14 @@
 uuid: 4be718bc-1db3-4514-b032-32876718d687
 langcode: da
-status: false
+status: closed
 dependencies:
   enforced:
     module:
       - webform_templates
 _core:
   default_config_hash: jZEUx7f_pYXTA-Dj7Pl421fXmVZLOY0A0LaBxX1i5Qw
+open: null
+close: null
 uid: null
 template: true
 id: template_employee_evaluation

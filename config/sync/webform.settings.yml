@@ -3,7 +3,7 @@ settings:
   default_form_closed_message: 'Beklager - denne formular er lukket.'
   default_form_exception_message: 'Denne formular kan ikke vises. Pr&oslash;v at kontakte hjemmesidens administrator.'
   default_form_confidential_message: 'Denne formular er adgangsbeskyttet. Du er n&oslash;dt til at <a href="[site:login-url]/logout?destination=[current-page:url:relative]">logge ind</a>&nbsp;for at bruge den.'
-  default_form_submit_label: Indsend
+  default_form_submit_label: Send
   default_form_submit_once: false
   default_form_disable_back: false
   default_form_unsaved: false
@@ -17,7 +17,7 @@ settings:
   default_wizard_complete_label: Mål
   default_preview_next_button_label: Gennemse
   default_preview_prev_button_label: '< Tilbage'
-  default_preview_message: "Please review your submission. Your submission is not complete until you press the &quot;Submit&quot; button!<br />\r\nV&aelig;r venlig at se dine angivelser igennem. Formularen bliver ikke afsendt, f&oslash;r du klikker &quot;Indsend&quot;."
+  default_preview_message: "Please review your submission. Your submission is not complete until you press the &quot;Submit&quot; button!<br />\r\nV&aelig;r venlig at se dine angivelser igennem. Formularen bliver ikke afsendt, f&oslash;r du klikker &quot;Send&quot;."
   default_draft_button_label: 'Gem kladde'
   default_draft_saved_message: 'Formularen blev gemt. Du kan vende tilbage senere og gendanne standardv&aelig;rdierne.'
   default_draft_loaded_message: 'Vi har fundet en delvist udfyldt formular. V&aelig;r venlig at udfylde resten.'

@@ -1,0 +1,103 @@
+uuid: a1dd8b8f-5f31-4ec4-9ad7-a06a8dea3454
+langcode: da
+status: open
+dependencies: {  }
+open: null
+close: null
+uid: 1
+template: false
+id: membership_application
+title: 'Bliv medlem'
+description: ''
+elements: "names:\n  '#type': webform_flexbox\n  first_name:\n    '#type': textfield\n    '#title': Fornavn(e)\n    '#required': true\n  last_name:\n    '#type': textfield\n    '#title': Efternavn\n    '#required': true\ne_mail:\n  '#type': email\n  '#title': E-mail\n  '#description': 'Vi sparer b&aring;de porto og besv&aelig;r, hvis du giver os din e-mail-adresse, s&aring; det g&oslash;r os meget glade.'\n  '#title_display': before\n  '#description_display': after\nadresse:\n  '#type': webform_address\n  '#title': Adresse\n  '#required': true\n  '#address__title': 'Gade, husnr., sal, side'\n  '#address__required': true\n  '#address_2__title': 'Bydel / ekstra angivelser'\n  '#postal_code__required': true\n  '#city__title': By\n  '#city__required': true\n  '#state_province__access': false\ntelephone:\n  '#type': tel\n  '#title': Telefon\n  '#description': 'Hvis du &oslash;nsker, at vi kan ringe dig op, kan du give os dit telefonnummer.'\n  '#description_display': after\n  '#international': true\nadministration:\n  '#type': fieldset\n  '#title': Administration\n  '#open': true\n  '#required': true\n  '#access_create_roles':\n    - redaktoer\n    - administrator\n  '#access_update_roles':\n    - redaktoer\n    - administrator\n  '#access_view_roles':\n    - adgang_til_medlemsliste\n    - redaktoer\n    - administrator\n  is_member:\n    '#type': webform_toggle\n    '#title': 'Er medlem'\n    '#default_value': '0'\n    '#access_create_roles':\n      - redaktoer\n      - administrator\n    '#access_update_roles':\n      - redaktoer\n      - administrator\n    '#access_view_roles':\n      - adgang_til_medlemsliste\n      - redaktoer\n      - administrator\n    '#on_text': ja\n    '#off_text': nej\n  has_paid:\n    '#type': webform_toggle\n    '#title': 'Har betalt kontingent'\n    '#default_value': '0'\n    '#access_create_roles':\n      - redaktoer\n      - administrator\n    '#access_update_roles':\n      - redaktoer\n      - administrator\n    '#access_view_roles':\n      - adgang_til_medlemsliste\n      - redaktoer\n      - administrator\n    '#on_text': ja\n    '#off_text': nej\n"
+css: ''
+javascript: ''
+settings:
+  page: true
+  page_submit_path: ''
+  page_confirm_path: ''
+  form_submit_label: ''
+  form_submit_once: false
+  form_submit_attributes: {  }
+  form_exception_message: ''
+  form_closed_message: ''
+  form_previous_submissions: true
+  form_confidential: false
+  form_confidential_message: ''
+  form_prepopulate: false
+  form_prepopulate_source_entity: false
+  form_disable_autocomplete: false
+  form_novalidate: false
+  form_unsaved: false
+  form_disable_back: false
+  form_autofocus: false
+  form_details_toggle: false
+  wizard_progress_bar: true
+  wizard_progress_pages: false
+  wizard_progress_percentage: false
+  wizard_next_button_label: ''
+  wizard_next_button_attributes: {  }
+  wizard_prev_button_label: ''
+  wizard_prev_button_attributes: {  }
+  wizard_start_label: ''
+  wizard_complete: true
+  wizard_complete_label: ''
+  preview: 0
+  preview_next_button_label: ''
+  preview_next_button_attributes: {  }
+  preview_prev_button_label: ''
+  preview_prev_button_attributes: {  }
+  preview_message: ''
+  draft: false
+  draft_auto_save: false
+  draft_button_label: ''
+  draft_button_attributes: {  }
+  draft_saved_message: ''
+  draft_loaded_message: ''
+  confirmation_type: message
+  confirmation_title: ''
+  confirmation_message: ''
+  confirmation_url: ''
+  confirmation_attributes: {  }
+  confirmation_back: true
+  confirmation_back_label: ''
+  confirmation_back_attributes: {  }
+  limit_total: null
+  limit_total_message: ''
+  limit_user: null
+  limit_user_message: ''
+  purge: none
+  purge_days: null
+  entity_limit_total: null
+  entity_limit_user: null
+  results_disabled: false
+  results_disabled_ignore: false
+  token_update: false
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+  view_any:
+    roles: {  }
+    users: {  }
+  update_any:
+    roles: {  }
+    users: {  }
+  delete_any:
+    roles: {  }
+    users: {  }
+  purge_any:
+    roles: {  }
+    users: {  }
+  view_own:
+    roles: {  }
+    users: {  }
+  update_own:
+    roles: {  }
+    users: {  }
+  delete_own:
+    roles: {  }
+    users: {  }
+handlers: {  }

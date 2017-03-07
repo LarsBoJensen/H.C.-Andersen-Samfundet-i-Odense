@@ -1,12 +1,14 @@
 uuid: 9b131662-77ca-4602-93db-93801d2133bc
 langcode: da
-status: true
+status: '1'
 dependencies:
   enforced:
     module:
       - webform
 _core:
   default_config_hash: p4H9jID10eRIpbjdV-_HVnBHpxU_uIjw5LNrDi3By2Q
+open: null
+close: null
 uid: null
 template: false
 id: contact

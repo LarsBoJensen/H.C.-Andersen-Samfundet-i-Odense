@@ -1,6 +1,6 @@
-uuid: 07242cef-65f1-47d5-9e4b-ae4cf7193b36
+uuid: a9108737-63df-49e3-b1e8-ff3d3ea0be2f
 langcode: da
-status: closed
+status: '1'
 dependencies:
   enforced:
     module:
@@ -10,18 +10,18 @@ _core:
 open: null
 close: null
 uid: null
-template: true
-id: template_contact
-title: 'Contact Us'
-description: 'A basic contact webform template.'
-elements: "name:\n  '#title': 'Your Name'\n  '#type': textfield\n  '#required': true\nemail:\n  '#title': 'Your Email'\n  '#type': email\n  '#required': true\nsubject:\n  '#title': Subject\n  '#type': textfield\n  '#required': true\nmessage:\n  '#title': Message\n  '#type': textarea\n  '#required': true\n"
+template: false
+id: kontakt_os
+title: 'Kontakt os'
+description: 'Global kontaktformular&nbsp;'
+elements: "name:\n  '#type': textfield\n  '#title': 'Dit navn'\n  '#title_display': attribute\n  '#placeholder': 'Dit navn'\n  '#required': true\nemail:\n  '#type': email\n  '#title': 'Din e-mail-adresse'\n  '#title_display': attribute\n  '#placeholder': 'Din e-mail-adresse'\n  '#required': true\nmessage:\n  '#type': textarea\n  '#title': 'Din besked'\n  '#title_display': attribute\n  '#placeholder': 'Din meddelelse'\n  '#required': true\n"
 css: ''
 javascript: ''
 settings:
   page: true
   page_submit_path: ''
   page_confirm_path: ''
-  form_submit_label: 'Send message'
+  form_submit_label: Send
   form_submit_once: false
   form_submit_attributes: {  }
   form_exception_message: ''
@@ -59,11 +59,14 @@ settings:
   draft_button_attributes: {  }
   draft_saved_message: ''
   draft_loaded_message: ''
-  confirmation_type: url_message
-  confirmation_message: 'Your message has been sent.'
+  confirmation_type: inline
+  confirmation_title: ''
+  confirmation_message: '<p>Tak for din besked. Vi vender tilbage til dig.</p>'
   confirmation_url: '<front>'
-  confirmation_attributes: {  }
-  confirmation_back: true
+  confirmation_attributes:
+    class:
+      - 'messages messages--status'
+  confirmation_back: false
   confirmation_back_label: ''
   confirmation_back_attributes: {  }
   limit_total: null

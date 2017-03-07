@@ -1,12 +1,14 @@
 uuid: 596e8aa0-0ebb-4749-be5d-970611d504e7
 langcode: da
-status: false
+status: closed
 dependencies:
   enforced:
     module:
       - webform_templates
 _core:
   default_config_hash: 2uHDIggHIf6r80qBVlGO8imfwTlFmjeQ46btg2Q-kYA
+open: null
+close: null
 uid: null
 template: true
 id: template_user_profile

@@ -1,12 +1,14 @@
 uuid: f0059191-8ea8-40d5-b5dc-591ce37ee080
 langcode: da
-status: true
+status: '1'
 dependencies:
   enforced:
     module:
       - webform_examples
 _core:
   default_config_hash: Ce8y58U5dsM2G_0NzhuUo-UGKPAUxBZOngjF4gc1IWM
+open: null
+close: null
 uid: null
 template: false
 id: example_layout_flexbox

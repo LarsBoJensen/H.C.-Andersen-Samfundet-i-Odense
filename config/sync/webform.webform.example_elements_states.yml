@@ -1,12 +1,14 @@
 uuid: 5d134700-a393-4f2b-b05a-023345b0ce84
 langcode: da
-status: false
+status: ''
 dependencies:
   enforced:
     module:
       - webform_examples
 _core:
   default_config_hash: f_jqK155esu5H_JFQIYhORPfddV9OApznLJs-PDbRoA
+open: null
+close: null
 uid: null
 template: false
 id: example_elements_states

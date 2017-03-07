@@ -1,12 +1,14 @@
 uuid: 18c56f82-d2f5-43bc-9676-961b2dccb897
 langcode: da
-status: false
+status: closed
 dependencies:
   enforced:
     module:
       - webform_templates
 _core:
   default_config_hash: toH-HBbolEc4XT7isWiFgrtTRhSTsX6y416Pf6q9mGk
+open: null
+close: null
 uid: null
 template: true
 id: template_donation
