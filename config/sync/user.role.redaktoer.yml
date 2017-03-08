@@ -65,3 +65,4 @@ permissions:
   - 'access webform overview'
   - 'administer webform submission'
   - 'view any webform submission'
+  - 'bypass node access'
