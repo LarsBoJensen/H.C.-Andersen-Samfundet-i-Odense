@@ -1,0 +1,71 @@
+.publishing-informations {
+  @include span(16 of 16);
+  margin-bottom: 2rem;
+  font-family: $font-family-serif;
+  color: $grey;
+  font-style: italic;
+
+  &:before {
+    display: none;
+  }
+
+  time {
+    margin: 0 .25rem;
+  }
+
+  .component-author--small,
+  .publishing-informations__time,
+  .publishing-informations__share {
+    margin: 1rem 0;
+  }
+
+  .component-author--small {
+    @include span(10 of 16);
+    @include push(3);
+  }
+
+  .publishing-informations__time {
+    @include span(16 of 16);
+  }
+
+  .publishing-informations__share {
+    @include span(16 of 16);
+  }
+}
+
+// -------- Larger than tablets
+@media($bp-larger-than-tablet) {
+  .publishing-informations {
+    @include span(15 of 16);
+    @include clearfix();
+    margin: 4rem auto;
+    float: none;
+    text-align: left;
+
+    .component-author--small {
+      @include span(5 of 16);
+      @include push(0);
+    }
+
+    .publishing-informations__time {
+      @include span(8 of 16 first);
+
+      &:before {
+        display: flex;
+        align-items: center;
+        float: left;
+        height: 5rem;
+        font-size: 3rem;
+        font-family: "Icomoon";
+        color: $grey;
+        margin-right: 1rem;
+        font-style: normal;
+        content: "\e902";
+      }
+    }
+    .publishing-informations__share {
+      @include span(3 of 16 last);
+      position: relative;
+    }
+  }
+}

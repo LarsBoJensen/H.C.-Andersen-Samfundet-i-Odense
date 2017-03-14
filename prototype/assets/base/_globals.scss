@@ -1,0 +1,120 @@
+html {
+  font-size: $font-size;
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  color: $font-color;
+  font-family: $font-family;
+  font-weight: 400;
+  background: $background-color;
+  -webkit-animation: bugfix infinite 1s;
+
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+
+  overflow-x: hidden;
+}
+
+@-webkit-keyframes bugfix {
+  from { padding: 0; }
+  to { padding: 0; }
+}
+
+a {
+  color: $link-color;
+  text-decoration: none;
+
+  &:hover {
+    color: $link-hover;
+    text-decoration: $link-decoration;
+  }
+}
+
+input {
+  padding: 0.5rem;
+  border-radius: 3px;
+  border: 1px solid $border-text-fields;
+}
+
+button {
+  @include border-radius(3px);
+  font-weight: 400;
+}
+
+button.primary {
+  background-color: $link-color;
+  border: solid 2px $link-color;
+  color: #FFF;
+}
+
+button.secondary {
+  background-color: #fff;
+  border: solid 2px $link-color;
+  color: $link-color;
+}
+
+.no-button {
+  border: solid 0px transparent;
+  background: none;
+  color: $link-color;
+}
+
+button.close {
+  @extend .no-button;
+}
+
+input[type=submit].primary {
+  @extend button.primary;
+}
+
+figure {
+  margin: 0;
+}
+
+// -------- Headlines
+
+h1, h2, h3, h4, h5, h6 {
+  color: $primary-color;
+  margin: 0;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+h5 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+// -------- Paragraphs
+p {
+  margin-top: 0;
+}
+
+// -------- Global classes
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px,1px,1px,1px);
+  overflow: hidden;
+  height: 1px;
+  width: 1px;
+  word-wrap: normal;
+}

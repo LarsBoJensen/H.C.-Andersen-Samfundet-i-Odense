@@ -1,0 +1,44 @@
+.teaser__aside {
+  @include span(16 of 16);
+  @include clearfix();
+  width: auto;
+  padding: 2rem;
+  font-family: $font-family-serif;
+
+  .teaser__image {
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  p {
+    font-size: 1.4rem;
+  }
+
+  a {
+    font-size: 1.6rem;
+    color: $grey;
+    font-style: italic;
+
+    &:hover {
+      text-decoration: none;
+    }
+
+    &:before {
+      margin-right: .5rem;
+      font-size: 1.3rem;
+      font-style: normal;
+    }
+  }
+}
+
+// -------- Larger than tablets
+@media($bp-larger-than-tablet) {
+  .teaser__aside {
+    @include span(3 of 16);
+    @include clearfix();
+    margin: 0 2.5rem;
+    padding: 0rem 2rem;
+  }
+}

@@ -1,0 +1,13 @@
+.main-content {
+  @include container;
+  margin-top: 15rem;
+  padding-top: 19px;
+}
+
+// -------- Larger than tablets
+@media($bp-larger-than-tablet) {
+  .main-content {
+    //margin-top: 11.5rem;
+    padding-top: 0;
+  }
+}

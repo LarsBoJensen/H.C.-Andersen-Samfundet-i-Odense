@@ -1,0 +1,38 @@
+.article {
+  @include clearfix;
+  @extend %default-box;
+
+  .article__header {
+    width: 100%;
+    @include clearfix();
+    text-align: center;
+  }
+
+  .article__header-tags {
+    margin-bottom: 2rem;
+    display: none;
+  }
+
+  .article-header__hgroup {
+    @extend %big-kicker-headline;
+    text-align: center;
+  }
+
+  .article__main-content {}
+}
+
+// -------- Larger than tablets
+@media($bp-larger-than-tablet) {
+  .article {
+    .article__header {
+      @include span(12 of 16);
+      @include push(2);
+      margin-top: 2rem;
+    }
+
+    .article__header-tags {
+      display: block;
+      margin-bottom: 2rem;
+    }
+  }
+}

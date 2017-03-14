@@ -1,0 +1,73 @@
+.component-text__blockquote,
+.component-text__blockquote--right,
+.component-text__blockquote--left {
+  font-family: $font-family-serif;
+  border-top: solid 1px $grey;
+  border-bottom: solid 1px $grey;
+  margin: 1em 0px;
+  padding: 1rem 2rem;
+  font-style: italic;
+  font-size: 2.4rem;
+  line-height: 3.4rem;
+  min-height: 60px;
+
+  &:before {
+    display: block;
+    float: left;
+    content: "\201C";
+    font-size: 10rem;
+    margin-right: 1rem;
+    width: 5rem;
+    height: 5rem;
+    line-height: 9.4rem;
+    color: $yellow;
+  }
+
+  cite {
+    position: relative;
+    display: block;
+    text-align: right;
+    margin-top: .5rem;
+
+    ul, ol {
+      list-style-position: inside;
+      padding-left: 0;
+
+      li {
+        margin-bottom: 1rem;
+      }
+
+    }
+  }
+}
+
+// -------- Larger than tablets
+@media($bp-larger-than-tablet) {
+
+  .component-text__blockquote,
+  .component-text__blockquote--right,
+  .component-text__blockquote--left {
+    padding: 1rem 1rem;
+  }
+    .component-text__blockquote {
+    @include span(8 of 16);
+    @include push(4);
+  }
+
+  .component-text__blockquote--right {
+    @include span(3 of 16);
+    float: right;
+    margin: 0 2%;
+    padding: 1rem 1rem;
+  }
+
+  .component-text__blockquote--left {
+    @include span(3 of 16);
+    padding: 1rem 1rem;
+    margin: 0 3%;
+  }
+
+  .component-text__blockquote--left + .component-text__blockquote {
+    @include push(0);
+  }
+}

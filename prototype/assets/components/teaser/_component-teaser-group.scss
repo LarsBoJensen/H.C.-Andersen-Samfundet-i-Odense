@@ -1,0 +1,26 @@
+.teaser-group__container {
+  @extend %default-box;
+}
+
+.teaser-group__headline {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  clear: left;
+
+  &:before,
+  &:after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #000;
+  }
+
+  span {
+    background: $background-color;
+    padding: 0 1.5rem;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: .1rem;
+  }
+}

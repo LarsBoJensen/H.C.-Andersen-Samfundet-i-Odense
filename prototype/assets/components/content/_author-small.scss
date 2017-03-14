@@ -1,0 +1,31 @@
+.component-author--small {
+  .author__image {
+    @include span(3 of 16);
+    float: left;
+    margin-right: 1rem;
+
+    img {
+      overflow: hidden;
+      border-radius: 50%;
+      width: 100%;
+    }
+  }
+
+  .author__name,
+  .author__position {
+    display: block;
+  }
+
+  .author__name {
+    font-family: $font-family;
+    color: $font-color;
+    font-weight: 600;
+    font-style: normal;
+    text-transform: uppercase;
+  }
+}
+
+// -------- Larger than tablets
+@media($bp-larger-than-tablet) {
+
+}

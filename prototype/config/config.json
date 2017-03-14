@@ -1,0 +1,6 @@
+{
+  "browserSync" : {
+    "url" : "http://prototype.hcas.dev/",
+    "browser": ""
+  }
+}

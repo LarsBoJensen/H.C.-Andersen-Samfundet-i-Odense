@@ -1,0 +1,100 @@
+.header__site-branding {
+
+  a {
+    color: oldlace;
+
+    &:hover {
+      text-decoration: none;
+      color: white;
+    }
+  }
+}
+
+
+.header__organisation-logo {
+  //@include span(8 of 16);
+  width: 180px;
+
+  img {
+    border: 8px solid moccasin;
+    border-radius: 50%;
+    background-color: oldlace;
+    transition: $default-transitions;
+  }
+
+  a:hover & img {
+    background-color: white;
+    border-color: papayawhip;
+  }
+}
+
+.header__organisation-name {
+
+  font-family: $font-family-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1;
+
+}
+
+
+// -------- Larger than tablets
+@media($bp-larger-than-tablet) {
+
+  .header__site-branding {
+
+    .scrolled & {
+      padding: .5rem 0 0;
+    }
+  }
+
+    .header__organisation-logo {
+    @include span(2 of 16);
+    display: block;
+    align-self: center;
+    padding-top: 4px;
+
+    img {
+      width: 100px;
+      height: auto;
+      transition: $default-transitions;
+    }
+
+    .scrolled & {
+      // Page is scrolled (100px or whatever is configured in the JS)
+      //@include span(1 of 16);
+      padding-top: 0;
+
+      img {
+        border: 3px solid $brown;
+        width: 50px;
+      }
+    }
+  }
+
+  .header__organisation-name {
+    //@include span(2 of 16);
+    font-size: 3rem;
+    align-self: top;
+    opacity: 1;
+    transition: $default-transitions;
+    width: 100%;
+    position: absolute;
+    top: 2rem;
+    left: 0;
+    text-align: center;
+
+
+    .scrolled & {
+      font-size: 0;
+      opacity: 0;
+    }
+  }
+
+}
+
+@media($bp-larger-than-desktop) {
+  .header__organisation-name {
+    font-size: 5rem;
+  }
+}

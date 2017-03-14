@@ -1,0 +1,37 @@
+.component-author {
+  @include span(3 of 16 first);
+  @extend %default-box-outlined;
+  margin: 0 4rem;
+  padding: 2rem 0;
+  text-align: center;
+
+  .author__image {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+
+    img {
+      display: block;
+      overflow: hidden;
+      border-radius: 100%;
+    }
+  }
+
+  .component-author {}
+  .author__name {
+    text-transform: uppercase;
+    font-family: $font-family;
+    font-weight: 600;
+    color: $font-color;
+  }
+  .author__position {
+    font-family: $font-family-serif;
+    font-style: italic;
+    color: $grey;
+  }
+}
+// -------- Larger than tablets
+@media($bp-larger-than-tablet) {
+
+}

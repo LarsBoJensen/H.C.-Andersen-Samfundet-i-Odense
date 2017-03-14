@@ -1,0 +1,67 @@
+.header-icons {
+  //@include span(6 of 16 last);
+
+  display: flex;
+  justify-content: flex-end;
+  line-height: 0;
+  padding-right: 1rem;
+
+  [class^="icon-"], [class*=" icon-"] {
+    cursor: pointer;
+    padding: .4rem;
+    margin: 1rem;
+    color: #666;
+    font-size: 2rem;
+  }
+
+  .is-active {
+    // This class is also implemented separately for the burger icon
+    color: $brown;
+  }
+
+  .icon-audio-player {
+    display: none;
+  }
+}
+
+// -------- Larger than tablets
+@media($bp-larger-than-tablet) {
+  .header-icons {
+    
+    padding-right: 0;
+
+    @include span(4 of 16 last);
+    transition: $default-transitions;
+
+    [class^="icon-"], [class*=" icon-"] {
+      margin: .2rem;
+      font-size: 1.6rem;
+      position: relative;
+      transition: $default-transitions;
+      &:hover {
+        color: $brown;
+      }
+    }
+
+    #burger-icon {
+      margin-left: 0.7rem;
+    }
+
+    .scrolled & {
+      @include span(3 of 16 last);
+    }
+
+    .header-icons_block {
+      padding: 0 2rem;
+
+      &:last-of-type {
+        padding-right: 0;
+      }
+    }
+
+    .icon-audio-player {
+      display: inline;
+    }
+
+  }
+}

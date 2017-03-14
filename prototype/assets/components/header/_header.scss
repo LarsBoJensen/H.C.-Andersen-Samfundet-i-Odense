@@ -1,0 +1,52 @@
+.page__header {
+  @include clearfix();
+  background-color: wheat;
+  display: block;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  width: 100%;
+  //padding: 1rem 0 0;
+  margin-bottom: 0;
+  //border-top: 3px solid $brown;
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.05);
+
+
+  .page__header--inner {
+    display: block;
+  }
+}
+
+// -------- Larger than tablets
+@media($bp-larger-than-tablet) {
+  .page__header {
+    display: block;
+    width: 100%;
+    z-index: 999;
+    top: 0;
+    margin-bottom: 3rem;
+    background-image: url('../images/background-tile.png');
+    background-repeat: repeat;
+    background-position: left top;
+
+    .page__header--inner {
+      @include container;
+      display: flex;
+      align-items: flex-end;
+
+      .scrolled & {
+        align-items: center;
+      }
+
+    }
+  }
+}
+
+// -------- Larger than desktop (1000 px)
+@media($bp-larger-than-desktop) {
+  .page__header {
+      background-image: url('../images/banner-face.png'), url('../images/background-tile.png');
+      background-repeat: no-repeat, repeat;
+      background-position: right top, left 30px;
+  }
+}

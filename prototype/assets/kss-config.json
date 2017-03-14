@@ -1,0 +1,17 @@
+{
+  "//": "The source and destination paths are relative to this file.",
+  "source": [
+    "../assets/"
+  ],
+  "destination":  "../styleguide/",
+
+  "//": "The css and js paths are URLs relative to the generated style guide.",
+  "css": [
+    "http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css",
+    "../css/app.css"
+  ],
+  "js": [
+    "../assets/js/integra.js"
+  ],
+  "template": "../styleguide/template/kss-node-template/template/"
+}

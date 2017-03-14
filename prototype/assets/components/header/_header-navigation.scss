@@ -1,0 +1,199 @@
+.page__navigation {
+  @include clearfix();
+  //background: white;
+  display: block;
+  width: 100%;
+  padding-bottom: 0;
+  margin-bottom: 0;
+
+  .page__navigation--inner {
+
+    .menu_label {
+      float: right;
+      margin: 1rem 2rem;
+      display: block;
+      cursor: pointer;
+      font-family: $font-family-serif;
+      font-style: italic;
+      color: $grey;
+    }
+
+    .header__navigation--inner {
+
+      .menu {
+        display: block;
+        //background: white;
+
+        ul {
+          @include container;
+          padding: 0;
+          margin: 0.5rem auto;
+
+          li {
+            list-style: none;
+
+            a {
+              text-decoration: none;
+              font-family: $font-family-serif;
+              color: $font-color;
+              padding: 1rem 2rem;
+              display: block;
+
+              &:only-child {
+                font-family: $font-family;
+                font-weight: lighter;
+                font-size: 1.5rem;
+              }
+            }
+
+            ul {
+              display: block;
+
+              li {
+                a {
+                  font-family: $font-family;
+                  font-weight: lighter;
+                  font-size: 1.5rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+// -------- Larger than tablets
+@media($bp-larger-than-tablet) {
+  .page__navigation {
+    display: block;
+    z-index: 999;
+
+    .page__navigation--inner {
+      @include container;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding: 0 1rem;
+
+      .header__navigation-headline {
+        margin: 0 1rem;
+      }
+
+      .header__navigation--inner {
+        background-color: rgba(255,255,255,.15);
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+
+        .menu {
+          white-space: nowrap;
+
+          ul {
+            margin: 0 auto;
+            z-index: 1;
+            display: flex;
+            justify-content: flex-end;
+
+            li {
+              float: left;
+              position: relative;
+
+              a {
+
+                &.is-active {
+                  //border-top: 1px solid $brown;
+                  padding-top: 1rem;
+                  //border-bottom: 1px solid $brown;
+
+                  & + ul {
+                    margin-top: 0;
+                  }
+                }
+
+                &:only-child {
+                  font-family: $font-family-serif;
+                  font-size: inherit;
+                }
+              }
+
+              &:hover {
+
+                //border-bottom: .6rem solid $brown;
+                border-top: 1px solid $brown;
+
+                & > ul {
+                  display: block;
+                  //margin-top: 1px;
+                  background: rgba(253,253,253,.95);
+                  //background-color: #fcfcfc;
+                  border: 1px solid $grey-light;
+                  border-top: 0;
+                  box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.05);
+                }
+                a {
+                  padding-top: .9rem;
+                }
+              }
+
+              &:last-of-type {
+                a {
+                  padding-right: 0;
+                }
+              }
+
+              ul {
+                display: none;
+                position: absolute;
+                right: 0;
+                min-width: 100%;
+
+
+                li {
+                  float: none;
+                  text-align: right;
+                  background: rgba(255,255,255,0);
+                  transition: $default-transitions;
+
+                  &:hover {
+                    border: none;
+                    background: rgba(255,255,255,1);
+                  }
+
+                  a {
+                    &.is-active {
+                      border: none;
+                      padding-top: 1rem;
+                      background: white;
+                    }
+
+                    &:first-child {
+                      padding-right: 2rem;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        .scrolled & {
+          border-radius: 6px;
+        }
+      }
+
+      .scrolled & {
+        align-items: center;
+      }
+    }
+  }
+}
+
+@media($bp-larger-than-desktophd) {
+  .page__navigation {
+    .page__navigation--inner {
+      padding: 0;
+    }
+  }
+}

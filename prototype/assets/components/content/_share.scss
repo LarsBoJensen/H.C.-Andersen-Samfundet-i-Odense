@@ -1,0 +1,41 @@
+.share-button {
+  transition: $default-transitions;
+  border: 1px solid $grey-light;
+  border-radius: 2rem;
+  cursor: pointer;
+  padding: 0.7rem 0rem;
+  margin: 0 2rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  i {
+    margin-right: 1rem;
+  }
+}
+
+.share-button.active {
+  border-radius: 2rem 2rem 0rem 0rem;
+}
+
+.share-content {
+  background: white;
+  display: none;
+  position: absolute;
+  padding: 0.7rem;
+  border: 1px solid $grey-light;
+  right: -2px;
+  width: 100%;
+}
+
+.share-content.show {
+  display: block;
+}
+
+// -------- Larger than tablets
+@media($bp-larger-than-tablet) {
+  .share-button {
+    width: 100%;
+  }
+}

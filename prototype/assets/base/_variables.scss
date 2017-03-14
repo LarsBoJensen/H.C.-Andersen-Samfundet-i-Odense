@@ -1,0 +1,50 @@
+// -------- Colors
+$brown: peru;
+$yellow: #f9bf41;
+$grey: #919191;
+$link-color: $brown !global; // #da0a17 !global; // default link color
+$font-color: #000 !global;  // default font color
+$grey-light: #f2f2f2;
+$text-grey: #999; //$grey-bright: #f3f3f3;
+$heading-color: $link-color !global;  // default heading (h1-h6) color
+
+
+
+// -------- Fonts
+//@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+$font-size: 62.5% !global;  // default font size. Change here will adjust sizes across the board.
+//$font-family: 'Roboto', sans-serif !global;  // default fonts
+$font-family: 'Georgia', Times, serif !global; // default headline font
+$font-family-serif: 'playfair', serif !global;  // default fonts
+$form-font: $font-family !global;  // default form font
+
+
+// -------- Transitions
+$default-transitions: all 250ms ease-in-out;
+
+
+// -------- Border colors
+$border-light-grey: #e1e1e1; // #f2f2f2;
+$border-text-fields: #cecece;
+
+// -------- Links
+$link-hover: lighten($link-color, 20%) !global; // default link color on :hover
+$link-decoration: underline !global; // default link decoration
+
+
+// -------- Basic colors
+$background-color: white !global; // default background color
+$primary-color: $link-color;
+
+
+// -------- Breakpoints
+$bp-larger-than-mobile    : "min-width: 400px" !default;
+$bp-larger-than-phablet   : "min-width: 550px" !default;
+$bp-larger-than-tablet    : "min-width: 750px" !default;
+$bp-larger-than-desktop   : "min-width: 1000px" !default;
+$bp-larger-than-desktophd : "min-width: 1200px" !default;
+
+
+// -------- Spacing between sections/paragraphs
+$paragraph-spacing: 2rem;
+

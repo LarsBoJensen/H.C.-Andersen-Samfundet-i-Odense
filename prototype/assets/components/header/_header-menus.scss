@@ -1,0 +1,19 @@
+.header__menus {
+  display: flex;
+}
+
+
+// -------- Larger than tablets
+@media($bp-larger-than-tablet) {
+  .header__menus {
+
+    justify-content: flex-end;
+
+    // This is buggy at the least in IE10 and below
+    span:last-of-type {
+      padding-right: 0;
+      margin-right: 0;
+    }
+
+  }
+}

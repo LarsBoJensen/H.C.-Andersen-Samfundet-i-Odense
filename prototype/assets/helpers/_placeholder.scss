@@ -1,0 +1,106 @@
+// -------- Headlines
+%default-kicker-headline {
+  .kicker {
+    text-transform: uppercase;
+    margin: 0 0 1rem 0;
+  }
+  .headline {
+    font-family: $font-family-serif;
+    font-weight: 400;
+    font-size: 3.2rem;
+    line-height: 3.3rem;
+    letter-spacing: -0.3px;
+    color: black;
+  }
+}
+
+%big-kicker-headline {
+  margin: 2rem;
+
+  .kicker {
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 1.5rem;
+    line-height: 2.3rem;
+    color: $brown;
+  }
+  .headline {
+    font-family: $font-family-serif;
+    font-weight: 400;
+    font-size: 2.3rem;
+    line-height: 2.6rem;
+    letter-spacing: -0.3px;
+    color: black;
+  }
+
+  // -------- Larger than tablets
+  @media($bp-larger-than-tablet) {
+    .kicker {
+      text-transform: uppercase;
+      margin: 0 0 1rem 0;
+      font-size: 2rem;
+      line-height: 3rem;
+    }
+    .headline {
+      font-size: 5.6rem;
+      line-height: 6rem;
+    }
+  }
+}
+
+// -------- Buttons
+.ghost-label-blue,
+%ghost-label-blue {
+  display: inline-block;
+  font-family: $font-family;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  font-weight: 600;
+
+  a {
+    @include border-radius(.3rem);
+    transition: $default-transitions;
+    padding: 0rem 1rem;
+    border: 1px solid $brown;
+    background: white;
+    display: block;
+
+    &:hover {
+      transition: $default-transitions;
+      text-decoration: none;
+      background: $brown;
+      color: white;
+    }
+  }
+}
+
+// -------- Icons
+%default-icon-settings {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// -------- Boxes
+%default-box {
+  @include span(16 of 16);
+  @include border-radius(3px);
+  @include clearfix;
+  overflow: hidden;
+  background: white;
+  margin: 1rem 0 3rem 0;
+}
+
+%default-box-outlined {
+  @extend %default-box;
+  border: 1px solid #d9d9d9;
+}

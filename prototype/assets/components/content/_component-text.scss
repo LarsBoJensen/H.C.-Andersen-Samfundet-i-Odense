@@ -1,0 +1,88 @@
+.component-text {
+  width: auto;
+  padding: 0 2rem;
+  font-size: 1.8rem;
+  letter-spacing: 0.2px;
+  line-height: 2.8rem;
+}
+
+
+.component-text--left,
+.component-text--right {
+  @include clearfix();
+  width: -moz-available;
+  border-top: 1px solid $brown;
+  padding-left: 0;
+  padding-top: 1rem;
+  margin: 2rem;
+  font-size: 1.8rem;
+
+  p {
+    margin-bottom: 0;
+  }
+
+  li {
+    margin-bottom: 1rem;
+  }
+}
+
+div[class^="component-text"] {
+  ul, ol {
+    padding-left: 1em;
+  }
+}
+
+.component-text--left {
+
+}
+
+// -------- Larger than tablets
+@media($bp-larger-than-tablet) {
+  .component-text {
+    @include span(8 of 16);
+    @include push(4);
+    padding: 0rem 0rem;
+  }
+
+  .component-text--left,
+  .component-text--right {
+    float: left;
+    overflow-wrap: break-word;
+    font-size: 1.4rem;
+  }
+
+  .component-text--right {
+    @include span(2 of 16 last);
+    border-left: 1px solid $brown;
+    border-top: none;
+    margin: 0 6% 0 5%;
+    padding: 0 0 0 1%;
+    font-size: 1.4rem;
+    float: left;
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+
+  .component-text--left {
+    @include span(2 of 16);
+    border-top: none;
+    padding: 0 1% 0 0;
+    margin: 0 6% 0 7%;
+    border-right: 1px solid $brown;
+
+    p, h2, h3, h4 {
+      text-align: right;
+    }
+    
+  }
+
+  .component-text__blockquote--left + .component-text,
+  .component-text--left + .component-text,
+  .teaser__aside + .component-text {
+    @include push(0);
+    padding: 0rem 0;
+  }
+}

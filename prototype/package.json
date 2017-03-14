@@ -1,0 +1,25 @@
+{
+  "name": "nordschleswiger",
+  "version": "0.0.1",
+  "description": "",
+  "devDependencies": {
+    "browser-sync": "2.13.0",
+    "gulp": "3.9.0",
+    "gulp-autoprefixer": "*",
+    "gulp-concat": "2.6.0",
+    "gulp-concat-css": "*",
+    "gulp-clean-css": "*",
+    "gulp-newer": "1.2.0",
+    "gulp-pixrem": "latest",
+    "gulp-sass": "latest",
+    "gulp-shell": "*",
+    "gulp-typescript": "*",
+    "gulp-uglify": "1.5.3",
+    "kss": "^2.4.0",
+    "require-dir": "*",
+    "requirejs": "*"
+  },
+  "dependencies": {
+    "susy": "2.2.12"
+  }
+}
